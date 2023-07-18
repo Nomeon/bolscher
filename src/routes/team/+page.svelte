@@ -16,12 +16,12 @@
 </div>
 <h2 class='text-alpha text-2xl font-semibold p-8'>Ons team</h2>
 <div class='grid grid-cols-2 gap-4 px-2'>
-    <TeamSpeler naam='Roy Bolscher' functie='Directie' email='roy@bolscher.nl' phone='+316'/>
-    <TeamSpeler naam='Roy Bolscher' functie='Directie' email='roy@bolscher.nl' phone='+316'/>
-    <TeamSpeler naam='Roy Bolscher' functie='Directie' email='roy@bolscher.nl' phone='+316'/>
-    <TeamSpeler naam='Roy Bolscher' functie='Directie' email='roy@bolscher.nl' phone='+316'/>
-    <TeamSpeler naam='Roy Bolscher' functie='Directie' email='roy@bolscher.nl' phone='+316'/>
-    <TeamSpeler naam='Roy Bolscher' functie='Directie' email='roy@bolscher.nl' phone='+316'/>
+    <TeamSpeler naam='Roy Bolscher' functie='Directie' email='roy@bolscher.nl' phone='+316' image='/images/roy.webp'/>
+    <TeamSpeler naam='Chiel Bolscher' functie='Directie' email='chiel@bolscher.nl' phone='+316' image='/images/chiel.webp'/>
+    <TeamSpeler naam='Niels Voorhuis' functie='Verkoop Buitendienst' email='niels@bolscher.nl' phone='+316' image='/images/roy.webp'/>
+    <TeamSpeler naam='Mattijs Kappen' functie='Verkoop Buitendienst' email='mattijs@bolscher.nl' phone='+316' image='/images/roy.webp'/>
+    <TeamSpeler naam='Niek Wolters' functie='Hoofd Verkoop Binnendienst' email='niek@bolscher.nl' phone='+316' image='/images/roy.webp'/>
+    <TeamSpeler naam='Peter Kromkamp' functie='Hoofd Financiële Administratie' email='Peter@bolscher.nl' phone='+316' image='/images/roy.webp'/>
 </div>
 
 
