@@ -13,7 +13,7 @@
         </div>
     </div>
 </div>
-<h2 class='text-alpha text-3xl  p-8'>Ons team</h2>
+<h2 class='text-alpha text-3xl p-8'>Ons team</h2>
 <div class='grid grid-cols-2 gap-4 px-2 mb-8'>
     <TeamSpeler naam='Roy Bolscher' functie='Directie' email='roy@bolscher.nl' phone='+316' image='/images/roy.webp'/>
     <TeamSpeler naam='Chiel Bolscher' functie='Directie' email='chiel@bolscher.nl' phone='+316' image='/images/chiel.webp'/>
