@@ -2,7 +2,7 @@
     import TeamSpeler from "$lib/components/TeamSpeler.svelte";
 </script>
 
-<div id='blob1' class='text-white h-[55dvh] mb-4'>
+<div id='blob1' class='text-white h-[60dvh] mb-4'>
     <div class='h-full w-full backdrop-brightness-75 p-8 pt-16 flex flex-col gap-4'>
         <h1 class='text-4xl'>Team</h1>
         <p class='font-light'>Een familiebedrijf met 100 medewerkers die maar 1 doel voor ogen hebben, het leveren van de mooiste producten voor u als professional. Met de beste selectie van vlees uit de hele wereld weten wij u steeds weer te verrassen met ons brede aanbod. Uiteraard bereid of bewerkt door ons team gediplomeerde slagers en koks. </p>

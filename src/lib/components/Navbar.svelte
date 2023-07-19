@@ -36,22 +36,22 @@
 </nav>
 {#if $toggled}
 <div id='top' class='h-[83dvh] w-full z-20 absolute top-0' in:fly={{ duration: 500, y: -1000}} out:fly={{ duration: 1000, y: -1000 }}>
-    <div class='h-[80dvh] pt-48 px-4 w-full bg-accent'>
-        <ul class='text-white text-3xl  flex flex-col'>
-            <li class='p-4'>
+    <div class='h-[80dvh] pt-40 pb-8 px-4 w-full bg-accent flex flex-col justify-between'>
+        <ul class='text-white text-3xl flex flex-col'>
+            <li class='px-4 py-2'>
                 <a href='/' on:click={toggleNav} class:active={$page.url.pathname === '/'}>Home</a>
             </li>
-            <li class='p-4'>
+            <li class='px-4 py-2'>
                 <a href='/ons-verhaal' on:click={toggleNav} class:active={$page.url.pathname === '/ons-verhaal'}>Ons verhaal</a>
             </li>
-            <li class='p-4'>
+            <li class='px-4 py-2'>
                 <a href='/team' on:click={toggleNav} class:active={$page.url.pathname === '/team'}>Team</a>
             </li>
-            <li class='p-4'>
+            <li class='px-4 py-2'>
                 <a href='/contact' on:click={toggleNav} class:active={$page.url.pathname === '/contact'}>Contact</a>
             </li>
         </ul>
-        <div class='flex flex-col pt-12 gap-4'>
+        <div class='flex flex-col gap-4'>
             <button class='bg-white rounded-full mx-4 p-4 text-alpha border-2 border-white'>
                 <a href='http://ebestel.bolscher.nl/'>Direct bestellen</a>
             </button>
