@@ -50,7 +50,7 @@
     <h3 class='mt-6'>Graag samenwerken?</h3>
     <p class='mb-12 font-light'>Benieuwd wat we voor u kunnen betekenen? Neem dan contact op met ons team!</p>
     <button class='bg-white rounded-full mx-4 p-4 text-alpha border-2 border-white'>
-        <a href='http://ebestel.bolscher.nl/'>Maak kennis met onze specialisten</a>
+        <a href='/team'>Maak kennis met onze specialisten</a>
     </button>
 </div>
 <div class='bg-delta grid grid-cols-3 pt-12 -mb-12'>

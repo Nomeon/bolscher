@@ -49,23 +49,23 @@
             <p>7547 RW Enschede</p>
         </div>
     </div>
-    <ul>
-        <li>Bank ING 65.23.13.264</li>
-        <li>BTW nr. NL 80.88.76.715.B.01</li>
-        <li>K.v.K. Enschede nr. 08089529</li>
-        <li>IBAN nummer: NL28INGB0652313264</li>
-        <li>BIC code INGBNL2A</li>
+    <ul class='flex flex-col'>
+        <li class='flex flex-row'>Bank:<p class='font-light'>&nbsp;ING 65.23.13.264</p></li>
+        <li class='flex flex-row'>BTW nr:<p class='font-light'>&nbsp;NL 80.88.76.715.B.01</p></li>
+        <li class='flex flex-row'>K.v.K Enschede nr:<p class='font-light'>&nbsp;08089529</p></li>
+        <li class='flex flex-row'>IBAN nummer:<p class='font-light'>&nbsp;NL28INGB0652313264</p></li>
+        <li class='flex flex-row'>BIC code:<p class='font-light'>&nbsp;INGBNL2A</p></li>
     </ul>
 </article>
 <article class='px-4 flex flex-col gap-4 mb-16'>
     <h2 class='text-2xl mb-4 pb-3 border-b border-alpha'>Openingstijden</h2>
-    <ul>
-        <li>Maandag: 08.00 - 17.00</li>
-        <li>Dinsdag: 08.00 - 17.00</li>
-        <li>Woensdag: 08.00 - 17.00</li>
-        <li>Donderdag: 08.00 - 17.00</li>
-        <li>Vrijdag: 08.00 - 17.00</li>
-        <li>Zaterdag: 08.00 - 13.00</li>
+    <ul class='flex flex-col'>
+        <li class='font-light flex flex-row'><p class='font-normal'>Maandag:</p><p>08.00 - 17.00</p></li>
+        <li class='font-light flex flex-row'><p class='font-normal'>Dinsdag:</p><p>&nbsp;08.00 - 17.00</p></li>
+        <li class='font-light flex flex-row'><p class='font-normal'>Woensdag:</p><p>&nbsp;08.00 - 17.00</p></li>
+        <li class='font-light flex flex-row'><p class='font-normal'>Donderdag:</p><p>&nbsp;08.00 - 17.00</p></li>
+        <li class='font-light flex flex-row'><p class='font-normal'>Vrijdag:</p><p>&nbsp;08.00 - 17.00</p></li>
+        <li class='font-light flex flex-row'><p class='font-normal'>Zaterdag:</p><p>&nbsp;08.00 - 13.00</p></li>
     </ul>
 </article>
 
