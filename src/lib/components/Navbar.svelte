@@ -18,8 +18,8 @@
 
 </script>
 
-<nav class='h-24 flex justify-between relative w-full z-30 font-semibold box-border {$toggled ? 'bg-transparent' : 'bg-alpha'}'>
-    <div id='logo' class='flex items-center justify-center relative pl-6 pr-10 py-8'>
+<nav class='h-24 flex justify-between relative w-full font-semibold box-border bg-alpha'>
+    <div id='logo' class='flex items-center justify-center relative pl-6 pr-10 py-8 z-30'>
         <div class='w-full absolute top-0 left-1/2 -translate-x-1/2 transition-all {$scrolled ? '-translate-y-full' : ''}'>
             <BolscherBg />
         </div>
@@ -28,7 +28,7 @@
         </a>
 
     </div>
-    <button title="Menu" class="bg-transparent flex md:hidden items-center relative justify-end mr-6 w-1/3" type="button" on:click={toggleNav}>
+    <button title="Menu" class="bg-transparent flex md:hidden items-center relative justify-end mr-6 w-1/3 z-30" type="button" on:click={toggleNav}>
 		<div id="menu-toggle" class={$toggled ? 'toggled' : ''}>
 			<div id="icon" class="relative h-[0.2rem] w-[1.8rem] transition-all duration-200 before:bg-white after:bg-white {$toggled ? 'bg-transparent after:rotate-45 before:-rotate-45' : 'bg-white'}"/>
 		</div>

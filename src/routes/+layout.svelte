@@ -2,7 +2,8 @@
     import Navbar from "$lib/components/Navbar.svelte";
     import ClipPath from "$lib/components/clipPath.svelte";
     import { scrolled } from "../stores";
-    import { onMount } from "svelte";
+    import { onMount, tick } from "svelte";
+    import { page } from "$app/stores";
     import "../app.css";
     import Footer from "$lib/components/Footer.svelte";
 
@@ -15,6 +16,15 @@
     function scroll() {
         box.scrollTop ? $scrolled = true : $scrolled = false;
     }
+
+    function scrollToTop() {
+        if (box) {
+            box.scrollTop = 0;
+        }
+    }
+
+    $: $page.route.id && scrollToTop();
+
 </script>
 
 <Navbar />

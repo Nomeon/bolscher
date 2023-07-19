@@ -10,6 +10,7 @@ export default {
             gamma: "#bfd996",
             accent: "#d1b852",
             epsilon: "#d6e7bc",
+            zeta: "#c9e4ee",
             card: "#d1b852",
         },
       },

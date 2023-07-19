@@ -12,12 +12,12 @@
             <img src={image} alt='{naam}' class='w-full aspect-square object-cover' />
         </div>
         <h3 class='text-xl'>{naam}</h3>
-        <h4 class='text-card text-center text-sm px-2'>{functie}</h4>
+        <h4 class='text-card text-center text-sm text-light px-2'>{functie}</h4>
         
     </div>
     <div id='contact' class='flex bg-card pt-4 pb-2 -mt-8 w-1/2 gap-2 items-center justify-center'>
-        <a href='tel:{phone}'><iconify-icon icon="mdi:phone" width="24"></iconify-icon></a>
-        <a href='mailto:{email}'><iconify-icon icon="tabler:mail-filled" width="24"></iconify-icon></a>
+        <a href='tel:{phone}'><iconify-icon icon="ph:phone" width="24" height="24"></iconify-icon></a>
+        <a href='mailto:{email}'><iconify-icon icon="ic:outline-mail" width="24" height="24"></iconify-icon></a>
     </div>
 </div>
 
