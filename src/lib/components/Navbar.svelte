@@ -28,27 +28,23 @@
             </a>
 
         </div>
-        <ul class='hidden lg:flex flex-row gap-4 text-white z-30 items-center font-light justify-center'>
-            <li class='px-4 py-4' class:active={$page.url.pathname === '/'}>
-                <a href='/' >Home</a>
+        <ul class='hidden lg:flex flex-row gap-4 text-white/60 z-30 items-center font-light justify-center'>
+            <li>
+                <a id='nav-item' href='/' class='px-4 py-4 relative' class:active-desk={$page.url.pathname === '/'}>Home</a>
             </li>
-            <li class='px-4 py-4'  class:active={$page.url.pathname === '/ons-verhaal'}>
-                <a href='/ons-verhaal'>Ons verhaal</a>
+            <li>
+                <a id='nav-item' href='/ons-verhaal' class='px-4 py-4 relative' class:active-desk={$page.url.pathname === '/ons-verhaal'}>Ons verhaal</a>
             </li>
-            <li class='px-4 py-4' class:active={$page.url.pathname === '/team'}>
-                <a href='/team' >Team</a>
+            <li>
+                <a id='nav-item' href='/team' class='px-4 py-4 relative' class:active-desk={$page.url.pathname === '/team'}>Team</a>
             </li>
-            <li class='px-4 py-4' class:active={$page.url.pathname === '/contact'}>
-                <a href='/contact' >Contact</a>
+            <li> 
+                <a id='nav-item' href='/contact' class='px-4 py-4 relative' class:active-desk={$page.url.pathname === '/contact'}>Contact</a>
             </li>
         </ul>
-        <div class='hidden lg:flex flex-row items-center justify-center font-light'>
-            <button class='bg-white rounded-full mx-2 py-4 px-12 text-alpha border-2 border-white'>
-                <a href='http://ebestel.bolscher.nl/'>Direct bestellen</a>
-            </button>
-            <button class='bg-transparent rounded-full mx-2 py-4 px-12 text-white border-2 border-white'>
-                <a href='https://www.proefdeperfectie.nl/?utm_source=Bolscher.nl&utm_medium=Site+Bolscher'>Particulier</a>
-            </button>
+        <div class='hidden lg:flex flex-row items-center justify-center font-normal'>
+            <a href='http://ebestel.bolscher.nl/' class='rounded-full mx-2 py-4 px-12 text-alpha bg-white hover:bg-white/90'>Direct bestellen</a>
+            <a href='https://www.proefdeperfectie.nl/?utm_source=Bolscher.nl&utm_medium=Site+Bolscher' class='rounded-full mx-2 py-4 px-12 text-white border-2 border-white hover:bg-white/10'>Particulier</a>
         </div>
         <!-- Mobile -->
         <button title="Menu" class="bg-transparent flex lg:hidden items-center relative justify-end mr-6 w-1/3 z-30" type="button" on:click={toggleNav}>
@@ -116,6 +112,36 @@
 
     .active {
         border-bottom: 2px solid white;
+    }
+
+    #nav-item {
+        transition: all 0.2s ease-in-out;
+    }
+
+    #nav-item::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 0.125rem;
+        transition: width 0.2s ease-in-out;
+    }
+
+    .active-desk::after,
+    #nav-item:hover::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%!important;
+        height: 0.125rem;
+        background-color: white;
+    }
+
+    .active-desk,
+    #nav-item:hover {
+        color: white;
     }
 </style>
 <svelte:window bind:innerWidth={width} on:resize={handleResize}/>

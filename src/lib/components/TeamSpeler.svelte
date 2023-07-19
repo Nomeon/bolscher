@@ -6,7 +6,7 @@
     export let image: string;
     
 </script>
-<div class='mb-8 w-full h-full flex flex-col items-center'>
+<div class='mb-8 w-full h-full flex flex-col items-center max-w-[12rem]'>
     <div id='card' class='relative flex flex-col items-center justify-center bg-white pb-12'>
         <div id='image' class='m-6'>
             <img src={image} alt='{naam}' class='w-full aspect-square object-cover' />

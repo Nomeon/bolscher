@@ -3,7 +3,7 @@
 </script>
 
 <footer class='bg-alpha flex flex-col gap-12 pb-12 lg:flex-row lg:pt-24 lg:px-24 lg:justify-between'>
-    <div id='logo' class='flex items-center justify-start relative pl-6 pr-10 py-8 lg:pl-0'>
+    <div id='logo' class='flex items-center justify-start relative pl-4 pr-10 pt-8 lg:pl-0'>
         <a href="/" class='w-[8.75rem] h-6 text-white lg:h-12 lg:w-[17.5rem]'>
             <Bolscher />
         </a>
