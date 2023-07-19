@@ -14,8 +14,8 @@
     </div>
 </div>
 
-<div class='grid grid-cols-2 gap-4 px-2 mb-8 lg:grid-cols-3 place-items-center'>
-    <h2 class='text-alpha text-3xl p-8 place-self-start lg:col-span-3 col-span-2 lg:text-4xl lg:pl-16'>Ons team</h2>
+<div class='grid grid-cols-2 gap-4 px-2 mb-8 lg:grid-cols-3 place-items-center lg:max-w-[80rem] m-auto'>
+    <h2 class='text-alpha text-3xl p-8 place-self-start lg:col-span-3 col-span-2 lg:text-4xl lg:pl-24'>Ons team</h2>
     <TeamSpeler naam='Roy Bolscher' functie='Directie' email='roy@bolscher.nl' phone='+316' image='/images/roy.webp'/>
     <TeamSpeler naam='Chiel Bolscher' functie='Directie' email='chiel@bolscher.nl' phone='+316' image='/images/chiel.webp'/>
     <TeamSpeler naam='Niels Voorhuis' functie='Verkoop Buitendienst' email='niels@bolscher.nl' phone='+316' image='/images/niels.webp'/>
