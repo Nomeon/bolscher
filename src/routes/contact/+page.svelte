@@ -1,33 +1,58 @@
 <script lang='ts'>
+    import { goto } from "$app/navigation";
+    import { name } from "../../stores";
+
     let naam: string;
     let bedrijf: string;
     let email: string;
     let telefoonnummer: string;
     let bericht: string;
+
+    async function onSubmit() {
+        const response = await fetch('/api/contact', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                naam: naam,
+                bedrijf: bedrijf ?? '',
+                email: email,
+                telefoonnummer: telefoonnummer,
+                bericht: bericht
+            })
+        })
+        if (response.ok) {
+            const url = `/contact/dankjewel`;
+            const voornaam = naam.split(' ')[0];
+            $name = voornaam;
+            await goto(url, { replaceState: false });
+        }
+    }
 </script>
 
 <div class='lg:flex lg:flex-row lg:w-full lg:relative lg:h-full lg:mb-48'>
     <div id='blob' class='bg-zeta lg:w-[60%] lg:absolute lg:left-0 lg:h-auto'>
-        <form class='flex flex-col gap-8 px-8 pt-16 pb-32 justify-start text-alpha lg:w-[80%] lg:pl-48'>
+        <form on:submit={onSubmit} class='flex flex-col gap-8 px-8 pt-16 pb-32 justify-start text-alpha lg:w-[80%] lg:pl-48'>
             <h1 class='text-4xl lg:text-6xl text-white'>Contact</h1>
             <div id='floating-label-group' class='relative mt-4'>
-                <input class='text-alpha bg-transparent border-b border-alpha/30 focus:outline-none w-full' type='text' name='Naam' placeholder=' ' bind:value={naam} required />
-                <label id='floating-label' class='text-alpha/60 text-sm' for='Naam'>Naam</label>
+                <input class='text-alpha bg-transparent border-b border-alpha/30 focus:outline-none w-full' type='text' id='naam' name='naam' placeholder=' ' bind:value={naam} required />
+                <label id='floating-label' class='text-alpha/60 text-sm' for='naam'>Naam</label>
             </div>
             <div id='floating-label-group' class='relative mt-4'>
-                <input class='text-alpha bg-transparent border-b border-alpha/30 focus:outline-none w-full' type='text' name='Bedrijf' placeholder=' ' bind:value={bedrijf} />
-                <label id='floating-label' class='text-alpha/60 text-sm' for='Bedrijf'>Bedrijf (optioneel)</label>
+                <input class='text-alpha bg-transparent border-b border-alpha/30 focus:outline-none w-full' type='text' id='bedrijf' name='bedrijf' placeholder=' ' bind:value={bedrijf} />
+                <label id='floating-label' class='text-alpha/60 text-sm' for='bedrijf'>Bedrijf (optioneel)</label>
             </div>
             <div id='floating-label-group' class='relative mt-4'>
-                <input class='text-alpha bg-transparent border-b border-alpha/30 focus:outline-none w-full' type='email' name='email' placeholder=' ' bind:value={email} required />
+                <input class='text-alpha bg-transparent border-b border-alpha/30 focus:outline-none w-full' type='email' id='email' name='email' placeholder=' ' bind:value={email} required />
                 <label id='floating-label' class='text-alpha/60 text-sm' for='email'>E-mailadres</label>
             </div>
             <div id='floating-label-group' class='relative mt-4'>
-                <input class='text-alpha bg-transparent border-b border-alpha/30 focus:outline-none w-full' type='tel' name='telefoonnummer' placeholder=' ' bind:value={telefoonnummer} required />
+                <input class='text-alpha bg-transparent border-b border-alpha/30 focus:outline-none w-full' type='tel' id='telefoonnummer' name='telefoonnummer' placeholder=' ' bind:value={telefoonnummer} required />
                 <label id='floating-label' class='text-alpha/60 text-sm' for='telefoonnummer'>Telefoonnummer</label>
             </div>
             <div id='floating-label-group' class='relative mt-4'>
-                <textarea class='text-alpha bg-transparent border-b border-alpha/30 focus:outline-none w-full' name='bericht' placeholder=' ' bind:value={bericht} required></textarea>
+                <textarea class='text-alpha bg-transparent border-b border-alpha/30 focus:outline-none w-full' id='bericht' name='bericht' placeholder=' ' bind:value={bericht} required></textarea>
                 <label id='floating-label' class='text-alpha/60 text-sm' for='bericht'>Vraag/opmerking</label>
             </div>
             <button type='submit' class='bg-white rounded-full p-4 text-alpha border-2 border-white w-1/2'>Versturen</button>
