@@ -14,14 +14,14 @@
     </div>
 </div>
 
-<div class='grid grid-cols-2 gap-4 px-2 mb-8 lg:grid-cols-3 place-items-center lg:max-w-[80rem] m-auto'>
+<div class='grid grid-cols-2 gap-4 px-2 mb-8 lg:mb-24 lg:mt-8 lg:grid-cols-3 place-items-center lg:max-w-[80rem] m-auto'>
     <h2 class='text-alpha text-3xl p-8 place-self-start lg:col-span-3 col-span-2 lg:text-4xl lg:pl-24'>Ons team</h2>
     <TeamSpeler naam='Roy Bolscher' functie='Directie' email='roy@bolscher.nl' phone='+316' image='/images/roy.webp'/>
     <TeamSpeler naam='Chiel Bolscher' functie='Directie' email='chiel@bolscher.nl' phone='+316' image='/images/chiel.webp'/>
     <TeamSpeler naam='Niels Voorhuis' functie='Verkoop Buitendienst' email='niels@bolscher.nl' phone='+316' image='/images/niels.webp'/>
     <TeamSpeler naam='Mattijs Kappen' functie='Verkoop Buitendienst' email='mattijs@bolscher.nl' phone='+316' image='/images/mattijs.webp'/>
     <TeamSpeler naam='Niek Wolters' functie='Hoofd Verkoop Binnendienst' email='niek@bolscher.nl' phone='+316' image='/images/niels.webp'/>
-    <TeamSpeler naam='Peter Kromkamp' functie='Hoofd Financiële Administratie' email='Peter@bolscher.nl' phone='+316' image='/images/peter.webp'/>
+    <TeamSpeler naam='Peter Kromkamp' functie='Hoofd Financiële Administratie' email='peter@bolscher.nl' phone='+316' image='/images/peter.webp'/>
     <TeamSpeler naam='Maarten Blank' functie='Financiële Administratie' email='niek@bolscher.nl' phone='+316' image='/images/maarten.webp'/>
     <TeamSpeler naam='Marijke Lenderink' functie='P&O Adviseur' email='marijke@bolscher.nl' phone='+316' image='/images/marijke.webp'/>
 </div>
